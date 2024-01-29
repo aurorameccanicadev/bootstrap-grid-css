@@ -20,31 +20,28 @@ html {
   box-sizing: inherit;
 }
 
-.bootstrap-wrapper {
 
-  @import "functions";
-  @import "variables";
+@import "functions";
+@import "variables";
 
-  @import "mixins/text-emphasis";
-  @import "mixins/breakpoints";
-  @import "mixins/clearfix";
-  @import "mixins/breakpoints";
-  @import "mixins/hover";
-  @import "mixins/image";
-  @import "mixins/visibility";
-  @import "mixins/text-hide";
-  @import "mixins/text-truncate";
-  @import "mixins/grid-framework";
-  @import "mixins/grid";
+@import "mixins/text-emphasis";
+@import "mixins/breakpoints";
+@import "mixins/clearfix";
+@import "mixins/breakpoints";
+@import "mixins/hover";
+@import "mixins/image";
+@import "mixins/visibility";
+@import "mixins/text-hide";
+@import "mixins/text-truncate";
+@import "mixins/grid-framework";
+@import "mixins/grid";
 
-  @import "custom";
+@import "custom";
+@import "utilities/clearfix";
+@import "utilities/visibility";
 
-  @import "utilities/clearfix";
-  @import "utilities/visibility";
+@import "grid";
 
-  @import "grid";
+// Create .img-fluid CSS class
+.img-fluid { @include img-fluid(); }
 
-  // Create .img-fluid CSS class
-  .img-fluid { @include img-fluid(); }
-
-}
